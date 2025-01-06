@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Awesome AI GitHub Projects</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --link-color: #58a6ff;
+            --border-color: #30363d;
+            --header-bg: #161b22;
+            --card-bg: #21262d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            background-color: var(--header-bg);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--text-color);
+        }
+
+        .sidebar {
+            background-color: var(--header-bg);
+            padding: 2rem;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .main-content {
+            padding: 2rem;
+        }
+
+        .category-tree {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .category-tree li {
+            margin: 0.2rem 0;
+            line-height: 1.3;
+        }
+
+        .category-tree a {
+            color: var(--link-color);
+            text-decoration: none;
+            display: block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .category-tree a:hover {
+            background-color: var(--card-bg);
+        }
+
+        .repo-count {
+            font-size: 0.8rem;
+            color: #8b949e;
+            margin-left: 0.3rem;
+        }
+
+        .category-section {
+            margin-bottom: 3rem;
+        }
+
+        .category-section h2 {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .repo-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .repo-card h3 {
+            margin: 0;
+            color: var(--link-color);
+        }
+
+        .repo-link {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+            margin: 1rem 0;
+            word-break: break-all;
+        }
+
+        .repo-link:hover {
+            text-decoration: underline;
+        }
+
+        .stars {
+            color: #8b949e;
+            display: block;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .description {
+            color: #8b949e;
+            margin: 1rem 0;
+        }
+
+        .nested-category {
+            list-style: none;
+            padding-left: 1rem;
+            margin: 0.1rem 0;
+        }
+
+        .category-section h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+        }
+
+        .category-section .nested-section {
+            margin-left: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Awesome AI GitHub Projects</h1>
+            <p>A curated collection of innovative AI projects and resources</p>
+        </header>
+        
+        <nav class="sidebar">
+            <h2>Categories</h2>
+            <ul class="category-tree">                <li>
+                    <a href="#ai-learning">
+                        AI Learning <span class="repo-count">(9)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ai-utils">
+                        AI Utils <span class="repo-count">(19)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#agents">
+                        Agents <span class="repo-count">(6)</span>
+                    </a>
+                    <ul class="nested-category">
+                    <li>
+                        <a href="#agent-orchestration">
+                            &nbsp;&nbsp;Agent orchestration <span class="repo-count">(11)</span>
+                        </a>
+                    </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#chat-client">
+                        Chat client <span class="repo-count">(5)</span>
+                    </a>
+                    <ul class="nested-category">
+                    <li>
+                        <a href="#openwebui">
+                            &nbsp;&nbsp;Openwebui <span class="repo-count">(2)</span>
+                        </a>
+                    </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#code-tools">
+                        Code tools <span class="repo-count">(11)</span>
+                    </a>
+                    <ul class="nested-category">
+                    <li>
+                        <a href="#vscode-ai-plugin">
+                            &nbsp;&nbsp;vscode ai plugin <span class="repo-count">(4)</span>
+                        </a>
+                    </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#llm-services">
+                        LLM Services <span class="repo-count">(22)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#mcp-(model-context-protocol)">
+                        MCP (Model context protocol) <span class="repo-count">(0)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#prompt-engineering">
+                        Prompt Engineering <span class="repo-count">(13)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#pure-llm">
+                        Pure LLM <span class="repo-count">(2)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#rag">
+                        Rag <span class="repo-count">(2)</span>
+                    </a>
+                    <ul class="nested-category">
+                    <li>
+                        <a href="#rag-tools">
+                            &nbsp;&nbsp;Rag Tools <span class="repo-count">(11)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#rag-libraries">
+                            &nbsp;&nbsp;Rag libraries <span class="repo-count">(1)</span>
+                        </a>
+                    </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#llm-test">
+                        llm Test <span class="repo-count">(1)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#llm-papers">
+                        llm papers <span class="repo-count">(0)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#llm-tools">
+                        llm tools <span class="repo-count">(11)</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        
+        <main class="main-content">
+            <section id="ai-learning" class="category-section">
+                <h2>AI Learning</h2>
+                <div class="repo-card">
+                    <h3>generative-ai-for-beginners</h3>
+                    <span class="stars">★ 66,153</span>
+                    <a href="https://github.com/microsoft/generative-ai-for-beginners" class="repo-link" target="_blank">https://github.com/microsoft/generative-ai-for-beginners</a>
+                    <p class="description">21 Lessons, Get Started Building with Generative AI  🔗 https://microsoft.github.io/generative-ai-for-beginners/</p>
+                </div>
+                <div class="repo-card">
+                    <h3>llm-course</h3>
+                    <span class="stars">★ 40,679</span>
+                    <a href="https://github.com/mlabonne/llm-course" class="repo-link" target="_blank">https://github.com/mlabonne/llm-course</a>
+                    <p class="description">Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>AI-For-Beginners</h3>
+                    <span class="stars">★ 35,457</span>
+                    <a href="https://github.com/microsoft/AI-For-Beginners" class="repo-link" target="_blank">https://github.com/microsoft/AI-For-Beginners</a>
+                    <p class="description">12 Weeks, 24 Lessons, AI for All!</p>
+                </div>
+                <div class="repo-card">
+                    <h3>FinRL</h3>
+                    <span class="stars">★ 10,369</span>
+                    <a href="https://github.com/AI4Finance-Foundation/FinRL" class="repo-link" target="_blank">https://github.com/AI4Finance-Foundation/FinRL</a>
+                    <p class="description">FinRL:  Financial Reinforcement Learning. 🔥</p>
+                </div>
+                <div class="repo-card">
+                    <h3>openvino_notebooks</h3>
+                    <span class="stars">★ 2,537</span>
+                    <a href="https://github.com/openvinotoolkit/openvino_notebooks" class="repo-link" target="_blank">https://github.com/openvinotoolkit/openvino_notebooks</a>
+                    <p class="description">📚 Jupyter notebook tutorials for OpenVINO™</p>
+                </div>
+                <div class="repo-card">
+                    <h3>open-instruct</h3>
+                    <span class="stars">★ 2,247</span>
+                    <a href="https://github.com/allenai/open-instruct" class="repo-link" target="_blank">https://github.com/allenai/open-instruct</a>
+                    <p class="description"></p>
+                </div>
+                <div class="repo-card">
+                    <h3>cookbook</h3>
+                    <span class="stars">★ 1,755</span>
+                    <a href="https://github.com/huggingface/cookbook" class="repo-link" target="_blank">https://github.com/huggingface/cookbook</a>
+                    <p class="description">Open-source AI cookbook</p>
+                </div>
+                <div class="repo-card">
+                    <h3>llm-tutorials</h3>
+                    <span class="stars">★ 667</span>
+                    <a href="https://github.com/samwit/llm-tutorials" class="repo-link" target="_blank">https://github.com/samwit/llm-tutorials</a>
+                    <p class="description">A set of LLM Tutorials from my youtube channel </p>
+                </div>
+                <div class="repo-card">
+                    <h3>langchain-academy</h3>
+                    <span class="stars">★ 585</span>
+                    <a href="https://github.com/langchain-ai/langchain-academy" class="repo-link" target="_blank">https://github.com/langchain-ai/langchain-academy</a>
+                    <p class="description"></p>
+                </div>
+            </section>
+            <section id="ai-utils" class="category-section">
+                <h2>AI Utils</h2>
+                <div class="repo-card">
+                    <h3>anything-llm</h3>
+                    <span class="stars">★ 29,799</span>
+                    <a href="https://github.com/Mintplex-Labs/anything-llm" class="repo-link" target="_blank">https://github.com/Mintplex-Labs/anything-llm</a>
+                    <p class="description">The all-in-one Desktop & Docker AI application with built-in RAG, AI agents, and more.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>exo</h3>
+                    <span class="stars">★ 18,329</span>
+                    <a href="https://github.com/exo-explore/exo" class="repo-link" target="_blank">https://github.com/exo-explore/exo</a>
+                    <p class="description">Run your own AI cluster at home with everyday devices 📱💻 🖥️⌚</p>
+                </div>
+                <div class="repo-card">
+                    <h3>Perplexica</h3>
+                    <span class="stars">★ 17,932</span>
+                    <a href="https://github.com/ItzCrazyKns/Perplexica" class="repo-link" target="_blank">https://github.com/ItzCrazyKns/Perplexica</a>
+                    <p class="description">Perplexica is an AI-powered search engine. It is an Open source alternative to Perplexity AI</p>
+                </div>
+                <div class="repo-card">
+                    <h3>docling</h3>
+                    <span class="stars">★ 17,470</span>
+                    <a href="https://github.com/DS4SD/docling" class="repo-link" target="_blank">https://github.com/DS4SD/docling</a>
+                    <p class="description">Get your documents ready for gen AI</p>
+                </div>
+                <div class="repo-card">
+                    <h3>postiz-app</h3>
+                    <span class="stars">★ 16,702</span>
+                    <a href="https://github.com/gitroomhq/postiz-app" class="repo-link" target="_blank">https://github.com/gitroomhq/postiz-app</a>
+                    <p class="description">📨 The ultimate social media scheduling tool, with a bunch of AI  🤖</p>
+                </div>
+                <div class="repo-card">
+                    <h3>composio</h3>
+                    <span class="stars">★ 13,943</span>
+                    <a href="https://github.com/ComposioHQ/composio" class="repo-link" target="_blank">https://github.com/ComposioHQ/composio</a>
+                    <p class="description">Composio equip's your AI agents & LLMs with 100+ high-quality integrations via function calling</p>
+                </div>
+                <div class="repo-card">
+                    <h3>DeepSeek-Coder</h3>
+                    <span class="stars">★ 9,719</span>
+                    <a href="https://github.com/deepseek-ai/DeepSeek-Coder" class="repo-link" target="_blank">https://github.com/deepseek-ai/DeepSeek-Coder</a>
+                    <p class="description">DeepSeek Coder: Let the Code Write Itself</p>
+                </div>
+                <div class="repo-card">
+                    <h3>aisuite</h3>
+                    <span class="stars">★ 9,588</span>
+                    <a href="https://github.com/andrewyng/aisuite" class="repo-link" target="_blank">https://github.com/andrewyng/aisuite</a>
+                    <p class="description">Simple, unified interface to multiple Generative AI providers </p>
+                </div>
+                <div class="repo-card">
+                    <h3>openvino</h3>
+                    <span class="stars">★ 7,569</span>
+                    <a href="https://github.com/openvinotoolkit/openvino" class="repo-link" target="_blank">https://github.com/openvinotoolkit/openvino</a>
+                    <p class="description">OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference</p>
+                </div>
+                <div class="repo-card">
+                    <h3>big-AGI</h3>
+                    <span class="stars">★ 5,786</span>
+                    <a href="https://github.com/enricoros/big-AGI" class="repo-link" target="_blank">https://github.com/enricoros/big-AGI</a>
+                    <p class="description">AI suite powered by state-of-the-art models and providing advanced AI/AGI functions. It features AI personas, AGI functions, multi-model chats, text-to-image, voice, response streaming, code highlighting and execution, PDF import, presets for developers, much more. Deploy on-prem or in the cloud.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>gpt-computer-assistant</h3>
+                    <span class="stars">★ 5,762</span>
+                    <a href="https://github.com/Upsonic/gpt-computer-assistant" class="repo-link" target="_blank">https://github.com/Upsonic/gpt-computer-assistant</a>
+                    <p class="description">Dockerized Computer Use Agents with Production Ready API’s - MCP Client for Langchain - GCA</p>
+                </div>
+                <div class="repo-card">
+                    <h3>ebook2audiobook</h3>
+                    <span class="stars">★ 5,313</span>
+                    <a href="https://github.com/DrewThomasson/ebook2audiobook" class="repo-link" target="_blank">https://github.com/DrewThomasson/ebook2audiobook</a>
+                    <p class="description">Convert ebooks to audiobooks with chapters and metadata using dynamic AI models and voice cloning. Supports 1,107+ languages!</p>
+                </div>
+                <div class="repo-card">
+                    <h3>phoenix</h3>
+                    <span class="stars">★ 4,395</span>
+                    <a href="https://github.com/Arize-ai/phoenix" class="repo-link" target="_blank">https://github.com/Arize-ai/phoenix</a>
+                    <p class="description">AI Observability & Evaluation</p>
+                </div>
+                <div class="repo-card">
+                    <h3>steel-browser</h3>
+                    <span class="stars">★ 2,744</span>
+                    <a href="https://github.com/steel-dev/steel-browser" class="repo-link" target="_blank">https://github.com/steel-dev/steel-browser</a>
+                    <p class="description">🔥 Open Source Browser API for AI Agents & Apps. Steel Browser is a batteries-included browser instance that lets you automate the web without worrying about infrastructure.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>trendFinder</h3>
+                    <span class="stars">★ 2,220</span>
+                    <a href="https://github.com/ericciarla/trendFinder" class="repo-link" target="_blank">https://github.com/ericciarla/trendFinder</a>
+                    <p class="description">Stay on top of trending topics on social media and the web with AI</p>
+                </div>
+                <div class="repo-card">
+                    <h3>pipelines</h3>
+                    <span class="stars">★ 1,180</span>
+                    <a href="https://github.com/open-webui/pipelines" class="repo-link" target="_blank">https://github.com/open-webui/pipelines</a>
+                    <p class="description">Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework </p>
+                </div>
+                <div class="repo-card">
+                    <h3>smol-vision</h3>
+                    <span class="stars">★ 1,070</span>
+                    <a href="https://github.com/merveenoyan/smol-vision" class="repo-link" target="_blank">https://github.com/merveenoyan/smol-vision</a>
+                    <p class="description">Recipes for shrinking, optimizing, customizing cutting edge vision models. 💜 </p>
+                </div>
+                <div class="repo-card">
+                    <h3>gollama</h3>
+                    <span class="stars">★ 611</span>
+                    <a href="https://github.com/sammcj/gollama" class="repo-link" target="_blank">https://github.com/sammcj/gollama</a>
+                    <p class="description">Go manage your Ollama models</p>
+                </div>
+                <div class="repo-card">
+                    <h3>ai-trader</h3>
+                    <span class="stars">★ 158</span>
+                    <a href="https://github.com/whchien/ai-trader" class="repo-link" target="_blank">https://github.com/whchien/ai-trader</a>
+                    <p class="description">Implement AI Trading Strategies with Backtrader</p>
+                </div>
+            </section>
+            <section id="agents" class="category-section">
+                <h2>Agents</h2>
+                <div class="repo-card">
+                    <h3>phidata</h3>
+                    <span class="stars">★ 17,454</span>
+                    <a href="https://github.com/phidatahq/phidata" class="repo-link" target="_blank">https://github.com/phidatahq/phidata</a>
+                    <p class="description">Build multi-modal Agents with memory, knowledge, tools and reasoning. Chat with them using a beautiful Agent UI.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>awesome-ai-agents</h3>
+                    <span class="stars">★ 12,706</span>
+                    <a href="https://github.com/e2b-dev/awesome-ai-agents" class="repo-link" target="_blank">https://github.com/e2b-dev/awesome-ai-agents</a>
+                    <p class="description">A list of AI autonomous agents</p>
+                </div>
+                <div class="repo-card">
+                    <h3>eliza</h3>
+                    <span class="stars">★ 9,791</span>
+                    <a href="https://github.com/elizaOS/eliza" class="repo-link" target="_blank">https://github.com/elizaOS/eliza</a>
+                    <p class="description">Autonomous agents for everyone</p>
+                </div>
+                <div class="repo-card">
+                    <h3>Qwen-Agent</h3>
+                    <span class="stars">★ 5,126</span>
+                    <a href="https://github.com/QwenLM/Qwen-Agent" class="repo-link" target="_blank">https://github.com/QwenLM/Qwen-Agent</a>
+                    <p class="description">Agent framework and applications built upon Qwen>=2.0, featuring Function Calling, Code Interpreter, RAG, and Chrome extension.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>core</h3>
+                    <span class="stars">★ 2,543</span>
+                    <a href="https://github.com/cheshire-cat-ai/core" class="repo-link" target="_blank">https://github.com/cheshire-cat-ai/core</a>
+                    <p class="description">AI agent microservice</p>
+                </div>
+                <div class="repo-card">
+                    <h3>flow</h3>
+                    <span class="stars">★ 817</span>
+                    <a href="https://github.com/lmnr-ai/flow" class="repo-link" target="_blank">https://github.com/lmnr-ai/flow</a>
+                    <p class="description">A lightweight task engine for building stateful AI agents that prioritizes simplicity and flexibility.</p>
+                </div>
+            </section>
+            <section id="agent-orchestration" class="category-section">
+                <h2>&nbsp;&nbsp;Agent orchestration</h2>
+                <div class="repo-card">
+                    <h3>langflow</h3>
+                    <span class="stars">★ 42,096</span>
+                    <a href="https://github.com/langflow-ai/langflow" class="repo-link" target="_blank">https://github.com/langflow-ai/langflow</a>
+                    <p class="description">Langflow is a low-code app builder for RAG and multi-agent AI applications. It’s Python-based and agnostic to any model, API, or database.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>haystack</h3>
+                    <span class="stars">★ 18,452</span>
+                    <a href="https://github.com/deepset-ai/haystack" class="repo-link" target="_blank">https://github.com/deepset-ai/haystack</a>
+                    <p class="description">AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>DB-GPT</h3>
+                    <span class="stars">★ 14,203</span>
+                    <a href="https://github.com/eosphoros-ai/DB-GPT" class="repo-link" target="_blank">https://github.com/eosphoros-ai/DB-GPT</a>
+                    <p class="description">AI Native Data App Development framework with AWEL(Agentic Workflow Expression Language) and Agents</p>
+                </div>
+                <div class="repo-card">
+                    <h3>TinyTroupe</h3>
+                    <span class="stars">★ 5,172</span>
+                    <a href="https://github.com/microsoft/TinyTroupe" class="repo-link" target="_blank">https://github.com/microsoft/TinyTroupe</a>
+                    <p class="description">LLM-powered multiagent persona simulation for imagination enhancement and business insights.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>pydantic-ai</h3>
+                    <span class="stars">★ 4,909</span>
+                    <a href="https://github.com/pydantic/pydantic-ai" class="repo-link" target="_blank">https://github.com/pydantic/pydantic-ai</a>
+                    <p class="description">Agent Framework / shim to use Pydantic with LLMs</p>
+                </div>
+                <div class="repo-card">
+                    <h3>julep</h3>
+                    <span class="stars">★ 4,403</span>
+                    <a href="https://github.com/julep-ai/julep" class="repo-link" target="_blank">https://github.com/julep-ai/julep</a>
+                    <p class="description">A new DSL and server for AI agents and multi-step tasks</p>
+                </div>
+                <div class="repo-card">
+                    <h3>AgentVerse</h3>
+                    <span class="stars">★ 4,344</span>
+                    <a href="https://github.com/OpenBMB/AgentVerse" class="repo-link" target="_blank">https://github.com/OpenBMB/AgentVerse</a>
+                    <p class="description">🤖 AgentVerse 🪐 is designed to facilitate the deployment of multiple LLM-based agents in various applications, which primarily provides two frameworks: task-solving and simulation</p>
+                </div>
+                <div class="repo-card">
+                    <h3>multi-agent-orchestrator</h3>
+                    <span class="stars">★ 3,696</span>
+                    <a href="https://github.com/awslabs/multi-agent-orchestrator" class="repo-link" target="_blank">https://github.com/awslabs/multi-agent-orchestrator</a>
+                    <p class="description">Flexible and powerful framework for managing multiple AI agents and handling complex conversations</p>
+                </div>
+                <div class="repo-card">
+                    <h3>swarms</h3>
+                    <span class="stars">★ 3,101</span>
+                    <a href="https://github.com/kyegomez/swarms" class="repo-link" target="_blank">https://github.com/kyegomez/swarms</a>
+                    <p class="description">The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework Join our Community: https://discord.com/servers/agora-999382051935506503</p>
+                </div>
+                <div class="repo-card">
+                    <h3>PraisonAI</h3>
+                    <span class="stars">★ 2,880</span>
+                    <a href="https://github.com/MervinPraison/PraisonAI" class="repo-link" target="_blank">https://github.com/MervinPraison/PraisonAI</a>
+                    <p class="description">PraisonAI is an AI Agents Framework with Self Reflection. PraisonAI application combines PraisonAI Agents, AutoGen, and CrewAI into a low-code solution for building and managing multi-agent LLM systems, focusing on simplicity, customisation, and efficient human–agent collaboration. </p>
+                </div>
+                <div class="repo-card">
+                    <h3>ControlFlow</h3>
+                    <span class="stars">★ 1,041</span>
+                    <a href="https://github.com/PrefectHQ/ControlFlow" class="repo-link" target="_blank">https://github.com/PrefectHQ/ControlFlow</a>
+                    <p class="description">🦾 Take control of your AI agents</p>
+                </div>
+            </section>
+            <section id="chat-client" class="category-section">
+                <h2>Chat client</h2>
+                <div class="repo-card">
+                    <h3>lobe-chat</h3>
+                    <span class="stars">★ 51,087</span>
+                    <a href="https://github.com/lobehub/lobe-chat" class="repo-link" target="_blank">https://github.com/lobehub/lobe-chat</a>
+                    <p class="description">🤯 Lobe Chat - an open-source, modern-design AI chat framework. Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Qwen /  DeepSeek), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS/Plugins/Artifacts). One-click FREE deployment of your private ChatGPT/ Claude application.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>chatbox</h3>
+                    <span class="stars">★ 24,487</span>
+                    <a href="https://github.com/Bin-Huang/chatbox" class="repo-link" target="_blank">https://github.com/Bin-Huang/chatbox</a>
+                    <p class="description">User-friendly Desktop Client App for AI Models/LLMs (GPT, Claude, Gemini, Ollama...)</p>
+                </div>
+                <div class="repo-card">
+                    <h3>kotaemon</h3>
+                    <span class="stars">★ 19,638</span>
+                    <a href="https://github.com/Cinnamon/kotaemon" class="repo-link" target="_blank">https://github.com/Cinnamon/kotaemon</a>
+                    <p class="description">An open-source RAG-based tool for chatting with your documents.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>superpower-chatgpt</h3>
+                    <span class="stars">★ 1,540</span>
+                    <a href="https://github.com/saeedezzati/superpower-chatgpt" class="repo-link" target="_blank">https://github.com/saeedezzati/superpower-chatgpt</a>
+                    <p class="description">ChatGPT with superpowers! Search chat history, create folders, export all chats, pin messages, access thousands of community prompts, incognito mode, language and tone selection, and many more features</p>
+                </div>
+                <div class="repo-card">
+                    <h3>mcp-sse-proxy</h3>
+                    <span class="stars">★ 1</span>
+                    <a href="https://github.com/nchekwa/mcp-sse-proxy" class="repo-link" target="_blank">https://github.com/nchekwa/mcp-sse-proxy</a>
+                    <p class="description">MCP2SSE Proxy ClaudeAI client</p>
+                </div>
+            </section>
+            <section id="openwebui" class="category-section">
+                <h2>&nbsp;&nbsp;Openwebui</h2>
+                <div class="repo-card">
+                    <h3>open-webui</h3>
+                    <span class="stars">★ 54,834</span>
+                    <a href="https://github.com/open-webui/open-webui" class="repo-link" target="_blank">https://github.com/open-webui/open-webui</a>
+                    <p class="description">User-friendly AI Interface (Supports Ollama, OpenAI API, ...)</p>
+                </div>
+                <div class="repo-card">
+                    <h3>open-webui-tools</h3>
+                    <span class="stars">★ 94</span>
+                    <a href="https://github.com/Haervwe/open-webui-tools" class="repo-link" target="_blank">https://github.com/Haervwe/open-webui-tools</a>
+                    <p class="description">a Repository of Open-WebUI tools to use with your favourite LLMs</p>
+                </div>
+            </section>
+            <section id="code-tools" class="category-section">
+                <h2>Code tools</h2>
+                <div class="repo-card">
+                    <h3>open-interpreter</h3>
+                    <span class="stars">★ 57,723</span>
+                    <a href="https://github.com/OpenInterpreter/open-interpreter" class="repo-link" target="_blank">https://github.com/OpenInterpreter/open-interpreter</a>
+                    <p class="description">A natural language interface for computers</p>
+                </div>
+                <div class="repo-card">
+                    <h3>gpt-engineer</h3>
+                    <span class="stars">★ 52,791</span>
+                    <a href="https://github.com/AntonOsika/gpt-engineer" class="repo-link" target="_blank">https://github.com/AntonOsika/gpt-engineer</a>
+                    <p class="description">Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from https://gptengineer.app</p>
+                </div>
+                <div class="repo-card">
+                    <h3>gpt-pilot</h3>
+                    <span class="stars">★ 32,158</span>
+                    <a href="https://github.com/Pythagora-io/gpt-pilot" class="repo-link" target="_blank">https://github.com/Pythagora-io/gpt-pilot</a>
+                    <p class="description">The first real AI developer</p>
+                </div>
+                <div class="repo-card">
+                    <h3>aider</h3>
+                    <span class="stars">★ 24,377</span>
+                    <a href="https://github.com/Aider-AI/aider" class="repo-link" target="_blank">https://github.com/Aider-AI/aider</a>
+                    <p class="description">aider is AI pair programming in your terminal</p>
+                </div>
+                <div class="repo-card">
+                    <h3>tabby</h3>
+                    <span class="stars">★ 22,474</span>
+                    <a href="https://github.com/TabbyML/tabby" class="repo-link" target="_blank">https://github.com/TabbyML/tabby</a>
+                    <p class="description">Self-hosted AI coding assistant</p>
+                </div>
+                <div class="repo-card">
+                    <h3>dspy</h3>
+                    <span class="stars">★ 20,778</span>
+                    <a href="https://github.com/stanfordnlp/dspy" class="repo-link" target="_blank">https://github.com/stanfordnlp/dspy</a>
+                    <p class="description">DSPy: The framework for programming—not prompting—language models</p>
+                </div>
+                <div class="repo-card">
+                    <h3>claude-engineer</h3>
+                    <span class="stars">★ 10,578</span>
+                    <a href="https://github.com/Doriandarko/claude-engineer" class="repo-link" target="_blank">https://github.com/Doriandarko/claude-engineer</a>
+                    <p class="description">Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic's Claude-3.5-Sonnet model to assist with software development tasks.This framework enables Claude to generate and manage its own tools, continuously expanding its capabilities through conversation. Available both as a CLI and a modern web interface</p>
+                </div>
+                <div class="repo-card">
+                    <h3>DeepSeek-Coder</h3>
+                    <span class="stars">★ 9,719</span>
+                    <a href="https://github.com/deepseek-ai/DeepSeek-Coder" class="repo-link" target="_blank">https://github.com/deepseek-ai/DeepSeek-Coder</a>
+                    <p class="description">DeepSeek Coder: Let the Code Write Itself</p>
+                </div>
+                <div class="repo-card">
+                    <h3>Data-Analysis-and-Machine-Learning-Projects</h3>
+                    <span class="stars">★ 6,165</span>
+                    <a href="https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects" class="repo-link" target="_blank">https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects</a>
+                    <p class="description">Repository of teaching materials, code, and data for my data analysis and machine learning projects.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>gpt-code-ui</h3>
+                    <span class="stars">★ 3,570</span>
+                    <a href="https://github.com/ricklamers/gpt-code-ui" class="repo-link" target="_blank">https://github.com/ricklamers/gpt-code-ui</a>
+                    <p class="description">An open source implementation of OpenAI's ChatGPT Code interpreter</p>
+                </div>
+                <div class="repo-card">
+                    <h3>aiCoder</h3>
+                    <span class="stars">★ 83</span>
+                    <a href="https://github.com/mmiscool/aiCoder" class="repo-link" target="_blank">https://github.com/mmiscool/aiCoder</a>
+                    <p class="description">A tool to write JS libraries using AI. The first and only tool that is using ASTs to perform surgical changes to existing code files with out mangling the code.  https://aicoderproject.com/</p>
+                </div>
+            </section>
+            <section id="vscode-ai-plugin" class="category-section">
+                <h2>&nbsp;&nbsp;vscode ai plugin</h2>
+                <div class="repo-card">
+                    <h3>continue</h3>
+                    <span class="stars">★ 21,000</span>
+                    <a href="https://github.com/continuedev/continue" class="repo-link" target="_blank">https://github.com/continuedev/continue</a>
+                    <p class="description">⏩ Continue is the leading open-source AI code assistant. You can connect any models and any context to build custom autocomplete and chat experiences inside VS Code and JetBrains</p>
+                </div>
+                <div class="repo-card">
+                    <h3>cline</h3>
+                    <span class="stars">★ 19,484</span>
+                    <a href="https://github.com/cline/cline" class="repo-link" target="_blank">https://github.com/cline/cline</a>
+                    <p class="description">Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>Roo-Cline</h3>
+                    <span class="stars">★ 1,695</span>
+                    <a href="https://github.com/RooVetGit/Roo-Cline" class="repo-link" target="_blank">https://github.com/RooVetGit/Roo-Cline</a>
+                    <p class="description">Autonomous coding agent right in your IDE, capable of creating/editing files, executing commands, using the browser, and more with your permission every step of the way.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>aide</h3>
+                    <span class="stars">★ 1,171</span>
+                    <a href="https://github.com/codestoryai/aide" class="repo-link" target="_blank">https://github.com/codestoryai/aide</a>
+                    <p class="description">The open-source AI-native IDE</p>
+                </div>
+            </section>
+            <section id="llm-services" class="category-section">
+                <h2>LLM Services</h2>
+                <div class="repo-card">
+                    <h3>ollama</h3>
+                    <span class="stars">★ 106,091</span>
+                    <a href="https://github.com/ollama/ollama" class="repo-link" target="_blank">https://github.com/ollama/ollama</a>
+                    <p class="description">Get up and running with Llama 3.3, Mistral, Gemma 2, and other large language models.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>langchain</h3>
+                    <span class="stars">★ 97,696</span>
+                    <a href="https://github.com/langchain-ai/langchain" class="repo-link" target="_blank">https://github.com/langchain-ai/langchain</a>
+                    <p class="description">🦜🔗 Build context-aware reasoning applications</p>
+                </div>
+                <div class="repo-card">
+                    <h3>dify</h3>
+                    <span class="stars">★ 57,305</span>
+                    <a href="https://github.com/langgenius/dify" class="repo-link" target="_blank">https://github.com/langgenius/dify</a>
+                    <p class="description">Dify is an open-source LLM app development platform. Dify's intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features and more, letting you quickly go from prototype to production.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>vllm</h3>
+                    <span class="stars">★ 33,231</span>
+                    <a href="https://github.com/vllm-project/vllm" class="repo-link" target="_blank">https://github.com/vllm-project/vllm</a>
+                    <p class="description">A high-throughput and memory-efficient inference and serving engine for LLMs</p>
+                </div>
+                <div class="repo-card">
+                    <h3>openai-python</h3>
+                    <span class="stars">★ 23,847</span>
+                    <a href="https://github.com/openai/openai-python" class="repo-link" target="_blank">https://github.com/openai/openai-python</a>
+                    <p class="description">The official Python library for the OpenAI API</p>
+                </div>
+                <div class="repo-card">
+                    <h3>khoj</h3>
+                    <span class="stars">★ 18,844</span>
+                    <a href="https://github.com/khoj-ai/khoj" class="repo-link" target="_blank">https://github.com/khoj-ai/khoj</a>
+                    <p class="description">Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>storm</h3>
+                    <span class="stars">★ 18,337</span>
+                    <a href="https://github.com/stanford-oval/storm" class="repo-link" target="_blank">https://github.com/stanford-oval/storm</a>
+                    <p class="description">An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>litellm</h3>
+                    <span class="stars">★ 15,904</span>
+                    <a href="https://github.com/BerriAI/litellm" class="repo-link" target="_blank">https://github.com/BerriAI/litellm</a>
+                    <p class="description">Python SDK, Proxy Server (LLM Gateway) to call 100+ LLM APIs in OpenAI format - [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, Replicate, Groq]</p>
+                </div>
+                <div class="repo-card">
+                    <h3>Qwen</h3>
+                    <span class="stars">★ 15,194</span>
+                    <a href="https://github.com/QwenLM/Qwen" class="repo-link" target="_blank">https://github.com/QwenLM/Qwen</a>
+                    <p class="description">The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>letta</h3>
+                    <span class="stars">★ 13,718</span>
+                    <a href="https://github.com/letta-ai/letta" class="repo-link" target="_blank">https://github.com/letta-ai/letta</a>
+                    <p class="description">Letta (formerly MemGPT) is a framework for creating LLM services with memory.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>txtai</h3>
+                    <span class="stars">★ 9,865</span>
+                    <a href="https://github.com/neuml/txtai" class="repo-link" target="_blank">https://github.com/neuml/txtai</a>
+                    <p class="description">💡 All-in-one open-source embeddings database for semantic search, LLM orchestration and language model workflows</p>
+                </div>
+                <div class="repo-card">
+                    <h3>SillyTavern</h3>
+                    <span class="stars">★ 9,219</span>
+                    <a href="https://github.com/SillyTavern/SillyTavern" class="repo-link" target="_blank">https://github.com/SillyTavern/SillyTavern</a>
+                    <p class="description">LLM Frontend for Power Users.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>generative-ai</h3>
+                    <span class="stars">★ 8,837</span>
+                    <a href="https://github.com/GoogleCloudPlatform/generative-ai" class="repo-link" target="_blank">https://github.com/GoogleCloudPlatform/generative-ai</a>
+                    <p class="description">Sample code and notebooks for Generative AI on Google Cloud, with Gemini on Vertex AI</p>
+                </div>
+                <div class="repo-card">
+                    <h3>langfuse</h3>
+                    <span class="stars">★ 7,619</span>
+                    <a href="https://github.com/langfuse/langfuse" class="repo-link" target="_blank">https://github.com/langfuse/langfuse</a>
+                    <p class="description">🪢 Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets. Integrates with LlamaIndex, Langchain, OpenAI SDK, LiteLLM, and more. 🍊YC W23 </p>
+                </div>
+                <div class="repo-card">
+                    <h3>ollama-python</h3>
+                    <span class="stars">★ 5,607</span>
+                    <a href="https://github.com/ollama/ollama-python" class="repo-link" target="_blank">https://github.com/ollama/ollama-python</a>
+                    <p class="description">Ollama Python library</p>
+                </div>
+                <div class="repo-card">
+                    <h3>optillm</h3>
+                    <span class="stars">★ 1,852</span>
+                    <a href="https://github.com/codelion/optillm" class="repo-link" target="_blank">https://github.com/codelion/optillm</a>
+                    <p class="description">Optimizing inference proxy for LLMs</p>
+                </div>
+                <div class="repo-card">
+                    <h3>generative-ai-docs</h3>
+                    <span class="stars">★ 1,790</span>
+                    <a href="https://github.com/google/generative-ai-docs" class="repo-link" target="_blank">https://github.com/google/generative-ai-docs</a>
+                    <p class="description">Documentation for Google's Gen AI site - including the Gemini API and Gemma</p>
+                </div>
+                <div class="repo-card">
+                    <h3>cognee</h3>
+                    <span class="stars">★ 1,028</span>
+                    <a href="https://github.com/topoteretes/cognee" class="repo-link" target="_blank">https://github.com/topoteretes/cognee</a>
+                    <p class="description">Reliable LLM Memory for AI Applications and AI Agents</p>
+                </div>
+                <div class="repo-card">
+                    <h3>amazon-bedrock-samples</h3>
+                    <span class="stars">★ 672</span>
+                    <a href="https://github.com/aws-samples/amazon-bedrock-samples" class="repo-link" target="_blank">https://github.com/aws-samples/amazon-bedrock-samples</a>
+                    <p class="description">This repository contains examples for customers to get started using the Amazon Bedrock Service. This contains examples for all available foundational models</p>
+                </div>
+                <div class="repo-card">
+                    <h3>ollama-ai-provider</h3>
+                    <span class="stars">★ 187</span>
+                    <a href="https://github.com/sgomez/ollama-ai-provider" class="repo-link" target="_blank">https://github.com/sgomez/ollama-ai-provider</a>
+                    <p class="description">Vercel AI Provider for running LLMs locally using Ollama</p>
+                </div>
+                <div class="repo-card">
+                    <h3>bravegpt</h3>
+                    <span class="stars">★ 166</span>
+                    <a href="https://github.com/KudoAI/bravegpt" class="repo-link" target="_blank">https://github.com/KudoAI/bravegpt</a>
+                    <p class="description">🦁 Adds AI to Brave Search. Ask from any site. Powered by GPT-4o!</p>
+                </div>
+                <div class="repo-card">
+                    <h3>awesome-computer-use</h3>
+                    <span class="stars">★ 15</span>
+                    <a href="https://github.com/philfung/awesome-computer-use" class="repo-link" target="_blank">https://github.com/philfung/awesome-computer-use</a>
+                    <p class="description">Curated resources about automated GUI computer-use via LLMs.  Highly opinionated, focus is on quality vs quantity.</p>
+                </div>
+            </section>
+            <section id="prompt-engineering" class="category-section">
+                <h2>Prompt Engineering</h2>
+                <div class="repo-card">
+                    <h3>awesome-chatgpt-prompts</h3>
+                    <span class="stars">★ 116,013</span>
+                    <a href="https://github.com/f/awesome-chatgpt-prompts" class="repo-link" target="_blank">https://github.com/f/awesome-chatgpt-prompts</a>
+                    <p class="description">This repo includes ChatGPT prompt curation to use ChatGPT and other LLM tools better.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>openai-cookbook</h3>
+                    <span class="stars">★ 61,002</span>
+                    <a href="https://github.com/openai/openai-cookbook" class="repo-link" target="_blank">https://github.com/openai/openai-cookbook</a>
+                    <p class="description">Examples and guides for using the OpenAI API</p>
+                </div>
+                <div class="repo-card">
+                    <h3>Prompt-Engineering-Guide</h3>
+                    <span class="stars">★ 51,977</span>
+                    <a href="https://github.com/dair-ai/Prompt-Engineering-Guide" class="repo-link" target="_blank">https://github.com/dair-ai/Prompt-Engineering-Guide</a>
+                    <p class="description">🐙 Guides, papers, lecture, notebooks and resources for prompt engineering</p>
+                </div>
+                <div class="repo-card">
+                    <h3>fabric</h3>
+                    <span class="stars">★ 26,408</span>
+                    <a href="https://github.com/danielmiessler/fabric" class="repo-link" target="_blank">https://github.com/danielmiessler/fabric</a>
+                    <p class="description">fabric is an open-source framework for augmenting humans using AI. It provides a modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>guidance</h3>
+                    <span class="stars">★ 19,399</span>
+                    <a href="https://github.com/guidance-ai/guidance" class="repo-link" target="_blank">https://github.com/guidance-ai/guidance</a>
+                    <p class="description">A guidance language for controlling large language models.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>cookbook</h3>
+                    <span class="stars">★ 10,147</span>
+                    <a href="https://github.com/google-gemini/cookbook" class="repo-link" target="_blank">https://github.com/google-gemini/cookbook</a>
+                    <p class="description">Examples and guides for using the Gemini API</p>
+                </div>
+                <div class="repo-card">
+                    <h3>promptflow</h3>
+                    <span class="stars">★ 9,729</span>
+                    <a href="https://github.com/microsoft/promptflow" class="repo-link" target="_blank">https://github.com/microsoft/promptflow</a>
+                    <p class="description">Build high-quality LLM apps - from prototyping, testing to production deployment and monitoring.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>gpt-prompt-engineer</h3>
+                    <span class="stars">★ 9,419</span>
+                    <a href="https://github.com/mshumer/gpt-prompt-engineer" class="repo-link" target="_blank">https://github.com/mshumer/gpt-prompt-engineer</a>
+                    <p class="description"></p>
+                </div>
+                <div class="repo-card">
+                    <h3>anthropic-cookbook</h3>
+                    <span class="stars">★ 9,058</span>
+                    <a href="https://github.com/anthropics/anthropic-cookbook" class="repo-link" target="_blank">https://github.com/anthropics/anthropic-cookbook</a>
+                    <p class="description">A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>chatgpt_system_prompt</h3>
+                    <span class="stars">★ 8,441</span>
+                    <a href="https://github.com/LouisShark/chatgpt_system_prompt" class="repo-link" target="_blank">https://github.com/LouisShark/chatgpt_system_prompt</a>
+                    <p class="description">A collection of GPT system prompts and various prompt injection/leaking knowledge.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>prompt-eng-interactive-tutorial</h3>
+                    <span class="stars">★ 2,033</span>
+                    <a href="https://github.com/anthropics/prompt-eng-interactive-tutorial" class="repo-link" target="_blank">https://github.com/anthropics/prompt-eng-interactive-tutorial</a>
+                    <p class="description">Anthropic's Interactive Prompt Engineering Tutorial</p>
+                </div>
+                <div class="repo-card">
+                    <h3>latitude-llm</h3>
+                    <span class="stars">★ 1,012</span>
+                    <a href="https://github.com/latitude-dev/latitude-llm" class="repo-link" target="_blank">https://github.com/latitude-dev/latitude-llm</a>
+                    <p class="description">Latitude is the open-source prompt engineering platform to build, evaluate, and refine your prompts with AI</p>
+                </div>
+                <div class="repo-card">
+                    <h3>open-o1</h3>
+                    <span class="stars">★ 100</span>
+                    <a href="https://github.com/shibing624/open-o1" class="repo-link" target="_blank">https://github.com/shibing624/open-o1</a>
+                    <p class="description">open-o1: Using GPT-4o with CoT to Create o1-like Reasoning Chains</p>
+                </div>
+            </section>
+            <section id="pure-llm" class="category-section">
+                <h2>Pure LLM</h2>
+                <div class="repo-card">
+                    <h3>jan</h3>
+                    <span class="stars">★ 25,778</span>
+                    <a href="https://github.com/janhq/jan" class="repo-link" target="_blank">https://github.com/janhq/jan</a>
+                    <p class="description">Jan is an open source alternative to ChatGPT that runs 100% offline on your computer</p>
+                </div>
+                <div class="repo-card">
+                    <h3>FinGPT</h3>
+                    <span class="stars">★ 14,575</span>
+                    <a href="https://github.com/AI4Finance-Foundation/FinGPT" class="repo-link" target="_blank">https://github.com/AI4Finance-Foundation/FinGPT</a>
+                    <p class="description">FinGPT: Open-Source Financial Large Language Models!  Revolutionize 🔥    We release the trained model on HuggingFace.</p>
+                </div>
+            </section>
+            <section id="rag" class="category-section">
+                <h2>Rag</h2>
+                <div class="repo-card">
+                    <h3>Verba</h3>
+                    <span class="stars">★ 6,567</span>
+                    <a href="https://github.com/weaviate/Verba" class="repo-link" target="_blank">https://github.com/weaviate/Verba</a>
+                    <p class="description">Retrieval Augmented Generation (RAG) chatbot powered by Weaviate</p>
+                </div>
+                <div class="repo-card">
+                    <h3>fast-graphrag</h3>
+                    <span class="stars">★ 2,687</span>
+                    <a href="https://github.com/circlemind-ai/fast-graphrag" class="repo-link" target="_blank">https://github.com/circlemind-ai/fast-graphrag</a>
+                    <p class="description">RAG that intelligently adapts to your use case, data, and queries</p>
+                </div>
+            </section>
+            <section id="rag-tools" class="category-section">
+                <h2>&nbsp;&nbsp;Rag Tools</h2>
+                <div class="repo-card">
+                    <h3>graphrag</h3>
+                    <span class="stars">★ 21,403</span>
+                    <a href="https://github.com/microsoft/graphrag" class="repo-link" target="_blank">https://github.com/microsoft/graphrag</a>
+                    <p class="description">A modular graph-based Retrieval-Augmented Generation (RAG) system</p>
+                </div>
+                <div class="repo-card">
+                    <h3>kotaemon</h3>
+                    <span class="stars">★ 19,638</span>
+                    <a href="https://github.com/Cinnamon/kotaemon" class="repo-link" target="_blank">https://github.com/Cinnamon/kotaemon</a>
+                    <p class="description">An open-source RAG-based tool for chatting with your documents.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>vanna</h3>
+                    <span class="stars">★ 12,518</span>
+                    <a href="https://github.com/vanna-ai/vanna" class="repo-link" target="_blank">https://github.com/vanna-ai/vanna</a>
+                    <p class="description">🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>pathway</h3>
+                    <span class="stars">★ 12,295</span>
+                    <a href="https://github.com/pathwaycom/pathway" class="repo-link" target="_blank">https://github.com/pathwaycom/pathway</a>
+                    <p class="description">Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>llm-app</h3>
+                    <span class="stars">★ 11,445</span>
+                    <a href="https://github.com/pathwaycom/llm-app" class="repo-link" target="_blank">https://github.com/pathwaycom/llm-app</a>
+                    <p class="description">Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>awesome-llm-apps</h3>
+                    <span class="stars">★ 11,110</span>
+                    <a href="https://github.com/Shubhamsaboo/awesome-llm-apps" class="repo-link" target="_blank">https://github.com/Shubhamsaboo/awesome-llm-apps</a>
+                    <p class="description">Collection of awesome LLM apps with RAG using OpenAI, Anthropic, Gemini and opensource models.</p>
+                </div>
+                <div class="repo-card">
+                    <h3>llmware</h3>
+                    <span class="stars">★ 8,394</span>
+                    <a href="https://github.com/llmware-ai/llmware" class="repo-link" target="_blank">https://github.com/llmware-ai/llmware</a>
+                    <p class="description">Unified framework for building enterprise RAG pipelines with small, specialized models</p>
+                </div>
+                <div class="repo-card">
+                    <h3>ragapp</h3>
+                    <span class="stars">★ 3,952</span>
+                    <a href="https://github.com/ragapp/ragapp" class="repo-link" target="_blank">https://github.com/ragapp/ragapp</a>
+                    <p class="description">The easiest way to use Agentic RAG in any enterprise</p>
+                </div>
+                <div class="repo-card">
+                    <h3>autoflow</h3>
+                    <span class="stars">★ 2,116</span>
+                    <a href="https://github.com/pingcap/autoflow" class="repo-link" target="_blank">https://github.com/pingcap/autoflow</a>
+                    <p class="description">pingcap/autoflow is a Graph RAG based and conversational knowledge base tool built with TiDB Serverless Vector Storage. Demo: https://tidb.ai</p>
+                </div>
+                <div class="repo-card">
+                    <h3>MemoRAG</h3>
+                    <span class="stars">★ 1,350</span>
+                    <a href="https://github.com/qhjqhj00/MemoRAG" class="repo-link" target="_blank">https://github.com/qhjqhj00/MemoRAG</a>
+                    <p class="description">Empowering RAG with a memory-based data interface for all-purpose applications!</p>
+                </div>
+                <div class="repo-card">
+                    <h3>bRAG-langchain</h3>
+                    <span class="stars">★ 1,034</span>
+                    <a href="https://github.com/bRAGAI/bRAG-langchain" class="repo-link" target="_blank">https://github.com/bRAGAI/bRAG-langchain</a>
+                    <p class="description">Everything you need to know to build your own RAG application</p>
+                </div>
+            </section>
+            <section id="rag-libraries" class="category-section">
+                <h2>&nbsp;&nbsp;Rag libraries</h2>
+                <div class="repo-card">
+                    <h3>ragflow</h3>
+                    <span class="stars">★ 27,298</span>
+                    <a href="https://github.com/infiniflow/ragflow" class="repo-link" target="_blank">https://github.com/infiniflow/ragflow</a>
+                    <p class="description">RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding.</p>
+                </div>
+            </section>
+            <section id="llm-test" class="category-section">
+                <h2>llm Test</h2>
+                <div class="repo-card">
+                    <h3>promptfoo</h3>
+                    <span class="stars">★ 5,103</span>
+                    <a href="https://github.com/promptfoo/promptfoo" class="repo-link" target="_blank">https://github.com/promptfoo/promptfoo</a>
+                    <p class="description">Test your prompts, agents, and RAGs. Red teaming, pentesting, and vulnerability scanning for LLMs. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration.</p>
+                </div>
+            </section>
+            <section id="llm-tools" class="category-section">
+                <h2>llm tools</h2>
+                <div class="repo-card">
+                    <h3>llama_index</h3>
+                    <span class="stars">★ 37,815</span>
+                    <a href="https://github.com/run-llama/llama_index" class="repo-link" target="_blank">https://github.com/run-llama/llama_index</a>
+                    <p class="description">LlamaIndex is a data framework for your LLM applications</p>
+                </div>
+                <div class="repo-card">
+                    <h3>LLaMA-Factory</h3>
+                    <span class="stars">★ 37,373</span>
+                    <a href="https://github.com/hiyouga/LLaMA-Factory" class="repo-link" target="_blank">https://github.com/hiyouga/LLaMA-Factory</a>
+                    <p class="description">Unified Efficient Fine-Tuning of 100+ LLMs (ACL 2024)</p>
+                </div>
+                <div class="repo-card">
+                    <h3>gradio</h3>
+                    <span class="stars">★ 35,028</span>
+                    <a href="https://github.com/gradio-app/gradio" class="repo-link" target="_blank">https://github.com/gradio-app/gradio</a>
+                    <p class="description">Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!</p>
+                </div>
+                <div class="repo-card">
+                    <h3>crawl4ai</h3>
+                    <span class="stars">★ 21,390</span>
+                    <a href="https://github.com/unclecode/crawl4ai" class="repo-link" target="_blank">https://github.com/unclecode/crawl4ai</a>
+                    <p class="description">🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper</p>
+                </div>
+                <div class="repo-card">
+                    <h3>DeepSeek-Coder</h3>
+                    <span class="stars">★ 9,719</span>
+                    <a href="https://github.com/deepseek-ai/DeepSeek-Coder" class="repo-link" target="_blank">https://github.com/deepseek-ai/DeepSeek-Coder</a>
+                    <p class="description">DeepSeek Coder: Let the Code Write Itself</p>
+                </div>
+                <div class="repo-card">
+                    <h3>bolt.diy</h3>
+                    <span class="stars">★ 8,675</span>
+                    <a href="https://github.com/stackblitz-labs/bolt.diy" class="repo-link" target="_blank">https://github.com/stackblitz-labs/bolt.diy</a>
+                    <p class="description">Prompt, run, edit, and deploy full-stack web applications using any LLM you want!</p>
+                </div>
+                <div class="repo-card">
+                    <h3>llama-stack</h3>
+                    <span class="stars">★ 5,926</span>
+                    <a href="https://github.com/meta-llama/llama-stack" class="repo-link" target="_blank">https://github.com/meta-llama/llama-stack</a>
+                    <p class="description">Composable building blocks to build Llama Apps</p>
+                </div>
+                <div class="repo-card">
+                    <h3>mesop</h3>
+                    <span class="stars">★ 5,764</span>
+                    <a href="https://github.com/google/mesop" class="repo-link" target="_blank">https://github.com/google/mesop</a>
+                    <p class="description">Rapidly build AI apps in Python</p>
+                </div>
+                <div class="repo-card">
+                    <h3>langchaingo</h3>
+                    <span class="stars">★ 5,291</span>
+                    <a href="https://github.com/tmc/langchaingo" class="repo-link" target="_blank">https://github.com/tmc/langchaingo</a>
+                    <p class="description">LangChain for Go, the easiest way to write LLM-based programs in Go</p>
+                </div>
+                <div class="repo-card">
+                    <h3>MegaParse</h3>
+                    <span class="stars">★ 4,869</span>
+                    <a href="https://github.com/QuivrHQ/MegaParse" class="repo-link" target="_blank">https://github.com/QuivrHQ/MegaParse</a>
+                    <p class="description">File Parser optimised for LLM Ingestion with no loss 🧠 Parse PDFs, Docx, PPTx in a format that is ideal for LLMs. </p>
+                </div>
+                <div class="repo-card">
+                    <h3>ScholarXIV</h3>
+                    <span class="stars">★ 834</span>
+                    <a href="https://github.com/dagmawibabi/ScholarXIV" class="repo-link" target="_blank">https://github.com/dagmawibabi/ScholarXIV</a>
+                    <p class="description">ScholArxiv is an open-source, aesthetic, minimal and AI powered app that allows users to search, read, bookmark, share, download and view summaries of academic papers from the arXiv repository.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
